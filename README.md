@@ -25,3 +25,6 @@
 + firewall-cmd --permanent --add-port=80/tcp  开放端口80
 + firewall-cmd --permanent --remove-port=80/tcp   移除端口80
 + firewall-cmd --reload   重启防火墙，修改后重启防火墙生效
+
+## springboot jar 包守护线程启动方式
++ nohup java -jar xxx.jar &
