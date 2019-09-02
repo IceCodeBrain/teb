@@ -14,7 +14,7 @@
 + 保存 service iptables save
 + 重启防火墙 service iptables restart
 + 设置完之后，查看一下是否能通过  iptables -L -n
-
++ 编辑防火墙配置 vim /etc/sysconfig/iptables
 ### 如果想要限制访问
 + iptables -D INPUT -p tcp -m state --state NEW -m tcp --dport 3306 -j ACCEPT
 
